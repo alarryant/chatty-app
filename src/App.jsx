@@ -18,8 +18,8 @@ function extractImageURL(input) {
 function Navbar(props) {
   return (
     <nav className="navbar">
-     <a href="/" className="navbar-brand">Yip Yap</a>
-     <p>{props.onlineUsers} {props.onlineUsers > 1 ? "users" : "user"} online</p>
+     <a href="/" className="navbar-brand">Doge Park</a><img src="../build/Dog.png"/>
+     <p>{props.onlineUsers} {props.onlineUsers > 1 ? "puppers" : "pupper"} playing</p>
     </nav>
   )
 }
@@ -52,7 +52,7 @@ class App extends React.Component {
 
     this.state = {loading: true,
                   messageList: [],
-                  currentUser: "Anonymous",
+                  currentUser: "Fido",
                   onlineUsers: ''};
   }
   // callback function to send new message to server

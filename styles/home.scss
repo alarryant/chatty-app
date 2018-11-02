@@ -1,21 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css");
 
 h1 {
-  color: #dfc5ff;
+  margin-left: 100px;
+  color: #4b4b4b;
 }
 
 body {
     background: white;
     color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
     margin: 70px 0;
   }
 
   .chatbar {
-    background: #dfc5ff;
-    border-top: 1px solid black;
+    background: #ddf5cc;
     bottom: 0;
     display: flex;
     left: 0;
@@ -26,7 +26,6 @@ body {
 
   .chatbar-message,
   .chatbar-username {
-    border: 1px solid black;
     display: block;
     height: 40px;
     line-height: 40px;
@@ -44,12 +43,12 @@ body {
 
   .message {
     display: flex;
-    padding: 5px;
+    padding: 5px 5px 5px 40px;
   }
 
   .message.system {
     font-style: italic;
-    padding: 5px 20px;
+    padding: 5px 20px 5px 40px;
   }
 
   .message-content,
@@ -73,14 +72,14 @@ body {
   }
 
   .navbar {
-    background: #dfc5ff;
-    border-bottom: 1px solid black;
+    background: #ddf5cc;
     height: 60px;
     left: 0;
     padding: 0 10px;
     position: fixed;
     right: 0;
     top: 0;
+    color: #4b4b4b;
   }
 
   .navbar-brand {
@@ -97,7 +96,13 @@ body {
 
   .navbar p {
     float: right;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 700;
+    margin-right: 25px;
+  }
+
+  .navbar img {
+    height: 60px;
+    width: 60px;
   }
 
