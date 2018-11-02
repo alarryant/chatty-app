@@ -5,8 +5,8 @@ A chatroom app built with React, Webpack, and Websocket that supports image post
 
 ### Final Product
 
-!["Demoing multiple users entering and leaving."]("https://github.com/alarryant/chatty-app/blob/master/build/DogeParkDemo.gif")
-!["Posting image links in chat"]("https://github.com/alarryant/chatty-app/blob/master/build/PostMedia.gif")
+!["Demoing multiple users entering and leaving."](https://github.com/alarryant/chatty-app/blob/master/build/DogeParkDemo.gif)
+!["Posting image links in chat"](https://github.com/alarryant/chatty-app/blob/master/build/PostMedia.gif)
 
 ### Usage
 
