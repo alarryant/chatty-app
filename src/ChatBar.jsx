@@ -12,10 +12,10 @@ class Chatbar extends React.Component {
   onEnter(event) {
     event.preventDefault();
     let input;
-    if ((event.key === "Enter") && event.target.value) {
+    if ((event.key === 'Enter') && event.target.value) {
       input = event.target.value;
       this.props.addNewMessage(input);
-      event.target.value = "";
+      event.target.value = '';
     }
   }
 
@@ -23,7 +23,7 @@ class Chatbar extends React.Component {
   enterChangeUser(event) {
     event.preventDefault();
     let input;
-    if ((event.key === "Enter") && (event.target.value !== this.props.currentUser)) {
+    if ((event.key === 'Enter') && (event.target.value !== this.props.currentUser)) {
       input = event.target.value;
       this.props.changeUser(input);
     }
@@ -31,14 +31,14 @@ class Chatbar extends React.Component {
 
   render() {
     return (
-      <footer className="chatbar">
-        <input className="chatbar-username"
-               placeholder="Your Name (Optional)"
+      <footer className='chatbar'>
+        <input className='chatbar-username'
+               placeholder='Your Name (Optional)'
                defaultValue={ this.props.currentUser }
-               onKeyUp={this.enterChangeUser} />
-        <input className="chatbar-message"
-               placeholder="Type a message and hit ENTER"
-               onKeyUp={this.onEnter} />
+               onKeyUp={ this.enterChangeUser } />
+        <input className='chatbar-message'
+               placeholder='Type a message and hit ENTER'
+               onKeyUp={ this.onEnter } />
       </footer>
     )
   }

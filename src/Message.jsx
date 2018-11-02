@@ -2,21 +2,23 @@ import React, {Component} from 'react';
 
 function NewMessages(props) {
   // sets colour of each message's sender
-  const colourStyle = {color: props.indivMessage.color};
+  const colourStyle = { color: props.indivMessage.color };
 
-  if (props.indivMessage.type === "incomingMessage" || props.indivMessage.type === "incomingPicMessage") {
+  if (props.indivMessage.type === 'incomingMessage' || props.indivMessage.type === 'incomingPicMessage') {
     return (
-      <div className="message">
-        <span className="message-username" style={colourStyle}>{props.indivMessage.username}</span>
-        <span className="message-content">{props.indivMessage.content}{props.indivMessage.type === "incomingPicMessage" ? (<br/>) : ''}
-          {props.indivMessage.type === "incomingPicMessage" ? (<img src={props.indivMessage.imgURL}/>) : ''}
+      <div className='message'>
+        <span className='message-username' style={ colourStyle }>{ props.indivMessage.username }</span>
+        {/* embeds image into message */}
+        <span className='message-content'>{ props.indivMessage.content }{ props.indivMessage.type === 'incomingPicMessage' ? (<br/>) : '' }
+          { props.indivMessage.type === 'incomingPicMessage' ? (<img src={ props.indivMessage.imgURL}/>) : '' }
         </span>
       </div>
     )
   } else {
+    // if a type of notification, use different styling
     return (
-    <div className="message system">
-      {props.indivMessage.content}
+    <div className='message system'>
+      { props.indivMessage.content }
     </div>
     )
   }
