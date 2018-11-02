@@ -1,7 +1,7 @@
 Doge Park (Chatty App)
 =====================
 
-A minimal and light dev environment for ReactJS.
+A chatroom app built with React, Webpack, and Websocket that supports image posts.
 
 ### Final Product
 
