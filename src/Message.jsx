@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 
 function NewMessages(props) {
-  if (props.indivMessage.type === "incomingMessage") {
+  // sets colour of each message's sender
+  const colourStyle = {color: props.indivMessage.color};
+
+  if (props.indivMessage.type === "incomingMessage" || props.indivMessage.type === "incomingPicMessage") {
     return (
       <div className="message">
-        <span className="message-username">{props.indivMessage.username}</span>
-        <span className="message-content">{props.indivMessage.content}</span>
+        <span className="message-username" style={colourStyle}>{props.indivMessage.username}</span>
+        <span className="message-content">{props.indivMessage.content}{props.indivMessage.type === "incomingPicMessage" ? (<br/>) : ''}
+          {props.indivMessage.type === "incomingPicMessage" ? (<img src={props.indivMessage.imgURL}/>) : ''}
+        </span>
       </div>
     )
   } else {
